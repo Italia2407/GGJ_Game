@@ -10,8 +10,12 @@ public class InputHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        //horizontal direction
         X_direction = 0;
+        //vertical direction
         Y_direction = 0;
+        //is the player jumping?
         JumpFlag = false;
     }
 
