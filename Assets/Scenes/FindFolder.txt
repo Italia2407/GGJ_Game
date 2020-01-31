@@ -1,0 +1,2 @@
+This file is only used since git is unable to find empty folders/directories.
+Do not remove file and copy it to any folder that might remain empty!
