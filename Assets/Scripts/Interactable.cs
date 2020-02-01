@@ -23,16 +23,10 @@ public class Interactable : MonoBehaviour
         // Checks if the player has entered the interactible's collision
         if (collision.tag == "Player")
         {
-<<<<<<< HEAD
             Debug.Log("Player has entered collsion!");
-=======
-<<<<<<< HEAD
-            Debug.Log("Player has entered collsion!");
-=======
+
             if (Input.GetKeyDown(KeyCode.E))
                 Interact();
->>>>>>> 3e4aa6e214db36122c49fde655ae6aa018d24570
->>>>>>> b7b9c11a79ab874919f7d951cce3b311e167f3a1
         }
     }
 
