@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                Debug.LogErrorFormat("Player has not been found);
+                Debug.LogErrorFormat("Player has not been found");
             }
         }
         //now if player is found
