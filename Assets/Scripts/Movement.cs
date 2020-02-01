@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour
         if (player == null)
         {
             //find the object the player's rigid body is attached to
-            GameObject playerbaseclass = GameObject.Find("Test Player");
+            GameObject playerbaseclass = GameObject.Find("Player");
             //if found
             if (playerbaseclass != null)
             {
@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                Debug.LogErrorFormat("Player has not been found);
+                Debug.LogErrorFormat("Player has not been found");
             }
         }
         //now if player is found

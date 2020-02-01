@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour
         // Checks if the player has entered the interactible's collision
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log.("Player has entered collsion!");
+            Debug.Log("Player has entered collsion!");
         }
     }
 }
