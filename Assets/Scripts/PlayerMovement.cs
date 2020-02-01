@@ -24,26 +24,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal");
-<<<<<<< HEAD
-=======
 
-        canJump = DetectGround();
-
-        if (horizontalMove != 0f)
-        {
-            float hor = horizontalMove * movementRate * (Time.deltaTime * 100.0f);
-            player.velocity = new Vector2(hor, player.velocity.y);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && canJump)
-        {
-            float ver = jumpHeight;// * (Time.deltaTime * 100.0f);
-            player.velocity = new Vector2(player.velocity.x, ver);
-        }
->>>>>>> 60bbe5be41f91bac3107adaaf308ddb287adddc2
     }
 
-    /*
+
     private void FixedUpdate()
     {
 
@@ -59,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
             player.velocity = new Vector2(player.velocity.x, ver);
         }
     }
-    */
+    
 
     private bool DetectGround()
     {
