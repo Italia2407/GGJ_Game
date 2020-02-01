@@ -21,7 +21,8 @@ public class TextboxManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        textbox.enabled = true;
+        textbox.gameObject.SetActive(true);
+        //textbox.enabled = true;
 
         Debug.Log("Starting conversation with " + dialogue.name);
         nameText.text = dialogue.name;
@@ -55,6 +56,7 @@ public class TextboxManager : MonoBehaviour
         player.GetComponent<PlayerMovement>().enabled = true;
         player.GetComponent<PlayerInteract>().enabled = true;
 
-        textbox.enabled = false;
+        //textbox.enabled = false;
+        textbox.gameObject.SetActive(false);
     }
 }

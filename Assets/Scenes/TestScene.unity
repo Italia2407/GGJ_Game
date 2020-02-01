@@ -513,7 +513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &613910014 stripped
 MonoBehaviour:
@@ -974,6 +974,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 4736082561377993317, guid: 37b68045d7989c84d86b1f23df8c8ec7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4929461081860060619, guid: 37b68045d7989c84d86b1f23df8c8ec7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1082,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 5833341652706116336, guid: 37b68045d7989c84d86b1f23df8c8ec7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b68045d7989c84d86b1f23df8c8ec7, type: 3}
