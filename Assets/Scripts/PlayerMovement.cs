@@ -19,14 +19,35 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMove;
 
     // Update is called once per frame
+
+
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal");
+<<<<<<< HEAD
+=======
+
+        canJump = DetectGround();
+
+        if (horizontalMove != 0f)
+        {
+            float hor = horizontalMove * movementRate * (Time.deltaTime * 100.0f);
+            player.velocity = new Vector2(hor, player.velocity.y);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && canJump)
+        {
+            float ver = jumpHeight;// * (Time.deltaTime * 100.0f);
+            player.velocity = new Vector2(player.velocity.x, ver);
+        }
+>>>>>>> 60bbe5be41f91bac3107adaaf308ddb287adddc2
     }
 
+    /*
     private void FixedUpdate()
     {
-        if (horizontalMove != 0.0f)
+
+        if (horizontalMove != 0f)
         {
             float hor = horizontalMove * movementRate * (Time.deltaTime * 100.0f);
             player.velocity = new Vector2(hor, player.velocity.y);
@@ -38,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
             player.velocity = new Vector2(player.velocity.x, ver);
         }
     }
+    */
 
     private bool DetectGround()
     {
@@ -55,8 +77,8 @@ public class PlayerMovement : MonoBehaviour
             BRCorner.y = y;
         }
 
-        RaycastHit2D hitLeft = Physics2D.Raycast(BLCorner, Vector2.down, 0.05f);
-        RaycastHit2D hitRight = Physics2D.Raycast(BRCorner, Vector2.down, 0.05f);
+        RaycastHit2D hitLeft = Physics2D.Raycast(BLCorner, Vector2.down, 0.1f);
+        RaycastHit2D hitRight = Physics2D.Raycast(BRCorner, Vector2.down, 0.1f);
 
         if (hitLeft.collider != null || hitRight.collider != null)
         {
