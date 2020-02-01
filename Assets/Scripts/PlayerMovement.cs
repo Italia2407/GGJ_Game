@@ -3,30 +3,25 @@
  * 
  */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody2D player = null;
+    private Rigidbody2D player;
     [SerializeField]
-    private Collider2D collider = null;
+    private Collider2D collider;
 
     public float movementRate = 5.0f;
     public float jumpHeight = 4.0f;
 
     // Local variables used by the whole script
-    private float horizontalMove = 0.0f;
-    private bool canJump = true;
+    private float horizontalMove;
 
     // Update is called once per frame
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal");
-
-        canJump = DetectGround();
     }
 
     private void FixedUpdate()
@@ -37,18 +32,10 @@ public class PlayerMovement : MonoBehaviour
             player.velocity = new Vector2(hor, player.velocity.y);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && canJump)
+        if (Input.GetKeyDown(KeyCode.Space) && DetectGround())
         {
             float ver = jumpHeight * (Time.deltaTime * 100.0f);
             player.velocity = new Vector2(player.velocity.x, ver);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Ground")
-        {
-
         }
     }
 

@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!61 &176213295 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8495407888088676066, guid: 9b9c2995a871ac44ead0dbed17e087fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 378185944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &321464651
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +220,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 907431863445141813, guid: 9b9c2995a871ac44ead0dbed17e087fc,
+        type: 3}
+      propertyPath: test1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 907431863445141813, guid: 9b9c2995a871ac44ead0dbed17e087fc,
+        type: 3}
+      propertyPath: test2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 907431863445141813, guid: 9b9c2995a871ac44ead0dbed17e087fc,
+        type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 176213295}
+    - target: {fileID: 907431863445141813, guid: 9b9c2995a871ac44ead0dbed17e087fc,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 907431863445141813, guid: 9b9c2995a871ac44ead0dbed17e087fc,
+        type: 3}
+      propertyPath: movementRate
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1895566470631799144, guid: 9b9c2995a871ac44ead0dbed17e087fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -222,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 1895566470631799144, guid: 9b9c2995a871ac44ead0dbed17e087fc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 1895566470631799144, guid: 9b9c2995a871ac44ead0dbed17e087fc,
         type: 3}
@@ -694,7 +725,7 @@ GameObject:
   - component: {fileID: 1516858386}
   m_Layer: 0
   m_Name: HubFloor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
