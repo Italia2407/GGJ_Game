@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Testing/StartScreen.unity
     guid: e5fa2987ac3f26f4daba008f30ab7ebc
   - enabled: 1
-    path: Assets/Testing/SampleScene_Tilemap.unity
-    guid: 1017d226554597f4e81f0efaf0880a36
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Testing/ISMA_SCN_TestScene.unity
     guid: c4fa88759fe619a419e2ead35488b91b
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: 9c3a6802a19b91f49ba277825e837bc3
+  - enabled: 1
+    path: Assets/Scenes/Medieval.unity
+    guid: cc536817c2b7b494fab693a56945ddba
   m_configObjects: {}

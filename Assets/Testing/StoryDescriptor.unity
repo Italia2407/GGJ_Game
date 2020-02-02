@@ -314,11 +314,15 @@ MonoBehaviour:
   text:
     name: 
     lines:
-    - Ndibnekwnfdojc3ensdgoivkerdv
-    - fdsvredsgvwredgvrd
-    - fvwerfdgvregvrefdbvehgbwrt rtbwfvregvrewbvregsvfd. reeingrveiugbnvreodlsgkv
-    - ergvred
-    - egvryjthshtrjbsrtgvtrf
+    - You worked on the Temporal Research Station in orbit around Earth for 4 years.
+      Dr. Kendal was your associate and a genius, but also your friend.
+    - Or at least he was until he you found out he'd gone mad from the isolation
+      and had been using the time portals to wreak havoc on the timeline.
+    - He thought he'd destroyed the station when he left, but you kept it together.
+      Now you have to follow where he's been and fix what's been disrupted, while
+      fixing the station.
+    - Who knows what's happened to Kendal, but at least you must fix the timeline.
+      And if you find him, you'll bring him to justice.
   sentenceText: {fileID: 740575560}
   levelToLoad: Hub
 --- !u!1 &671015346
@@ -421,8 +425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -18, y: 0}
+  m_SizeDelta: {x: -108, y: -48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740575560
 MonoBehaviour:
@@ -498,11 +502,11 @@ RectTransform:
   m_Father: {fileID: 598161248}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 469, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -12, y: 0}
   m_SizeDelta: {x: 120, y: 78.9}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1611845440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,8 +632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: 0}
-  m_SizeDelta: {x: -180, y: -48}
+  m_AnchoredPosition: {x: -40, y: 0}
+  m_SizeDelta: {x: -200, y: -48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678939779
 MonoBehaviour:
