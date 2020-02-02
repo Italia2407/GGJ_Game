@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Testing/ISMA_SCN_TestScene.unity
     guid: c4fa88759fe619a419e2ead35488b91b
+  - enabled: 1
+    path: Assets/Testing/StoryDescriptor.unity
+    guid: 7aa6eecef3f897b459aadc6f522b5e2a
   m_configObjects: {}
