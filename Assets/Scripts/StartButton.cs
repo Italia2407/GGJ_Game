@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StartButton : MonoBehaviour
 {
+    public string firstLevel = "Hub";
 
     public void BeginGame()
     {
-        SceneManager.LoadScene("SampleScene_Tilemap");
+        SceneManager.LoadScene(firstLevel);
     }
 }
