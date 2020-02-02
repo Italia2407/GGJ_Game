@@ -320,7 +320,7 @@ MonoBehaviour:
     - ergvred
     - egvryjthshtrjbsrtgvtrf
   sentenceText: {fileID: 740575560}
-  levelToLoad: TestScene
+  levelToLoad: Hub
 --- !u!1 &671015346
 GameObject:
   m_ObjectHideFlags: 0
