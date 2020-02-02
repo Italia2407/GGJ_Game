@@ -72,7 +72,8 @@ public class MainSimonSaysController : MonoBehaviour
 
 
                             audio.Play();
-                            SceneManager.LoadScene("SampleScene_Tilemap");
+                            FoundPiecesData.SimonSaysFound();
+                            SceneManager.LoadScene("Hub");
                         }
                         else
                         {
