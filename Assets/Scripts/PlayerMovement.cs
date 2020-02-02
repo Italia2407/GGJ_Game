@@ -19,8 +19,6 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMove;
 
     // Update is called once per frame
-
-
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal");

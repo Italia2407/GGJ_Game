@@ -6,7 +6,7 @@ public class InteractableBase : MonoBehaviour
 
     public bool CanInteract { get => canInteract; }
 
-    public void Interact()
+    public virtual void Interact()
     {
         Destroy(gameObject);
     }
