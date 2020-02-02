@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D player;
     [SerializeField]
     private Collider2D collider;
+    [SerializeField]
+    private AudioSource audio;
 
     public float movementRate = 5.0f;
     public float jumpHeight = 4.0f;
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         {
             float ver = jumpHeight * (Time.deltaTime * 100.0f);
             player.velocity = new Vector2(player.velocity.x, ver);
+            audio.Play();
         }
     }
     

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainSimonSaysController : MonoBehaviour
 {
+    [SerializeField]
+    private AudioSource audio;
 
     public static MainSimonSaysController instance;
     public static bool number_to_be_generated;
@@ -64,10 +66,13 @@ public class MainSimonSaysController : MonoBehaviour
                         number_of_flashes += 1;
                         if (number_of_flashes > 6)
                         {
+
                             Completed = true;
                             user_input = false;
-                               // yield return new WaitUntil(() => FadeOutComplete == true);
-                            //SceneManager.LoadScene("SampleScene_Tilemap");
+
+
+                            audio.Play();
+                            SceneManager.LoadScene("SampleScene_Tilemap");
                         }
                         else
                         {
