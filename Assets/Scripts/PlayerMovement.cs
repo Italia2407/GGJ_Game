@@ -12,7 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Rigidbody2D player = null;
 
-    public float movementRate = 5.0f;
+    public float movementRate = 5f;
+    public float JumpForce = 10f;
 
     // Local variables used by the whole script
     private float horizontalMove = 0.0f;
@@ -21,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            player.velocity = new Vector2(player.velocity.x,JumpForce);
     }
 
     private void FixedUpdate()
