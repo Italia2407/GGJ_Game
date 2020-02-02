@@ -19,12 +19,13 @@ public class PlayerMovement : MonoBehaviour
 
     // Local variables used by the whole script
     private float horizontalMove;
+    private bool jump;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal");
-
+        jump = Input.GetKeyDown(KeyCode.Space);
     }
 
 
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             player.velocity = new Vector2(hor, player.velocity.y);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && DetectGround())
+        if (jump && DetectGround())
         {
             float ver = jumpHeight * (Time.deltaTime * 100.0f);
             player.velocity = new Vector2(player.velocity.x, ver);

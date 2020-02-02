@@ -442,7 +442,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 862747075}
+  collider: {fileID: 0}
+  audio: {fileID: 0}
   movementRate: 5
+  jumpHeight: 4
 --- !u!1 &1350806267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 122851629971490588, guid: 071e64175a2a9d44cb3acca777d9872a,
@@ -602,6 +605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Test Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3875460563934410801, guid: 0487ed431d6e87641baf71cd8a533880,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6632308397488028435, guid: 0487ed431d6e87641baf71cd8a533880,
         type: 3}

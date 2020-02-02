@@ -952,7 +952,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 85d1fc9030e331a41846f578acc12cc6, type: 3}
-  m_Color: {r: 0.4056604, g: 0.07079922, b: 0.07079922, a: 1}
+  m_Color: {r: 0.206, g: 0.03599999, b: 0.03599999, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -974,8 +974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caadf2bcbf428ec4e8c63fb242555fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LightUpColour: {r: 0.9811321, g: 0.42114633, b: 0.42114633, a: 1}
-  DarkColour: {r: 0.49056602, g: 0.06710574, b: 0.06710574, a: 1}
+  LightUpColour: {r: 1, g: 0.08962262, b: 0.08962262, a: 1}
+  DarkColour: {r: 0.20784314, g: 0.039215688, b: 0.039215688, a: 1}
   index: 0
 --- !u!1 &948572933
 GameObject:
@@ -1360,6 +1360,7 @@ GameObject:
   - component: {fileID: 1557835054}
   - component: {fileID: 1557835053}
   - component: {fileID: 1557835052}
+  - component: {fileID: 1557835055}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1432,6 +1433,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1557835055
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557835051}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1dc7cb6ca6dd4f6469bb11dd72416f2c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1868268212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1602,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 85d1fc9030e331a41846f578acc12cc6, type: 3}
-  m_Color: {r: 0.057938762, g: 0.3962264, b: 0.06495147, a: 1}
+  m_Color: {r: 0.026287131, g: 0.177, b: 0.029792083, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1527,8 +1624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caadf2bcbf428ec4e8c63fb242555fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LightUpColour: {r: 0.56287825, g: 0.8584906, b: 0.6075445, a: 1}
-  DarkColour: {r: 0.09220363, g: 0.5283019, b: 0.17992726, a: 1}
+  LightUpColour: {r: 0.047970813, g: 0.9245283, b: 0.17653267, a: 1}
+  DarkColour: {r: 0.02745098, g: 0.18039216, b: 0.03137255, a: 1}
   index: 1
 --- !u!1 &1905460465
 GameObject:
@@ -1573,6 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21533a787d2d1c4a9b39b1f86f7d2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 1557835055}
 --- !u!1 &1989721441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,7 +1744,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 85d1fc9030e331a41846f578acc12cc6, type: 3}
-  m_Color: {r: 0.06065327, g: 0.10371612, b: 0.4433962, a: 1}
+  m_Color: {r: 0.03137255, g: 0.05490196, b: 0.20784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1668,8 +1766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caadf2bcbf428ec4e8c63fb242555fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LightUpColour: {r: 0.5647918, g: 0.58156914, b: 0.7169812, a: 1}
-  DarkColour: {r: 0.0731132, g: 0.13089997, b: 0.5, a: 1}
+  LightUpColour: {r: 0.09531862, g: 0.1842359, b: 0.9622642, a: 1}
+  DarkColour: {r: 0.030578125, g: 0.053109378, b: 0.206, a: 1}
   index: 2
 --- !u!1 &2050555016
 GameObject:
