@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StartButton : MonoBehaviour
 {
-    public string firstLevel = "Hub";
+    public string firstLevel = "StoryDescriptor";
 
     public void BeginGame()
     {

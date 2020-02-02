@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ddd7e9937b1494458b4832cff44a6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: Hub
+  firstLevel: StoryDescriptor
 --- !u!4 &1298950962
 Transform:
   m_ObjectHideFlags: 0
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 731ae75918a753741bb35cbdfaca4abc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b8642555e76c124cb81b6f4267fb6f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
