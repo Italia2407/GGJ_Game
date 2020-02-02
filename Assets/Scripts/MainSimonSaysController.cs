@@ -14,10 +14,10 @@ public class MainSimonSaysController : MonoBehaviour
     public static int[] input = new int[6];
     public static int[] output = new int[6];
     public static int selected;
-    public static bool user_input;
+    public static bool user_input, FadeOutComplete;
     private static int user_index;
     public static int Current_Flash;
-    private static bool Completed;
+    public static bool Completed;
     private static bool StartFlashes;
 
     // Start is called before the first frame update
@@ -30,6 +30,7 @@ public class MainSimonSaysController : MonoBehaviour
         Current_Flash = 1;
         StartFlashes = true;
         user_index = 0;
+        FadeOutComplete = false;
     }
 
     // Update is called once per frame
@@ -65,6 +66,11 @@ public class MainSimonSaysController : MonoBehaviour
                         number_of_flashes += 1;
                         if (number_of_flashes > 6)
                         {
+
+                            Completed = true;
+                            user_input = false;
+
+
                             audio.Play();
                             SceneManager.LoadScene("SampleScene_Tilemap");
                         }
